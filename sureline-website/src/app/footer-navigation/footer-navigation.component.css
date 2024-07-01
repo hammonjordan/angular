@@ -3,7 +3,7 @@
     align-items: center;
     justify-content: center;
     position: absolute;
-    bottom: 0;
+    top: var(--body-height);
     min-height: var(--footer-min-height);
     width: 100%;
     background-color: var(--header-background-color);
@@ -26,11 +26,12 @@
 #fns01, #fns02, #fns03, #fns04 {
     margin-left: auto;
     margin-right: auto;
+    height: fit-content;
 }
 
 .tab-headings {
     margin: 8px;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 .footer-nav-link {
