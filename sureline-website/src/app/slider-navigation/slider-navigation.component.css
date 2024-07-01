@@ -1,0 +1,110 @@
+/* Base styles for slider navigation bar */
+#sliderNavbar {
+    position: fixed;
+    top: var(--header-height);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: var(--slider-height);
+    min-width: 245.67px;
+    padding: 0 123px;
+    background-color: var(--header-background-color);
+    color: var(--text-white);
+    transition: all 250ms ease-in-out;
+    z-index: 999;
+    border-left: 1px solid var(--section-background-color);
+}
+
+/* Slide-in animation classes */
+.sliderInActive {
+    right: -100vw;
+}
+
+.sliderActive {
+    right: 0;
+}
+
+/* Styles for dropdown trigger elements */
+#sns01,
+#sns02,
+#sns03,
+#sns04,
+#sns05,
+#sns06 {
+    position: relative;
+    line-height: calc(var(--header-height) / 1.5);
+    cursor: pointer;
+}
+
+/* Dropdown menu styles */
+.sdropdown {
+    display: none;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    list-style-type: none;
+    text-align: center;
+    min-width: 236px;
+    width: fit-content;
+    height: fit-content;
+    z-index: 1;
+    border: 1px solid var(--section-background-color);
+}
+
+.sdropdown li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Show dropdown on hover */
+#sns01:hover .sdropdown,
+#sns02:hover .sdropdown {
+    display: block;
+}
+
+/* Adjust position of the second trigger on hover */
+#sns01:hover ~ #sns02, #sns01:hover ~ #sns03, #sns01:hover ~ #sns04, #sns01:hover ~ #sns05, #sns01:hover ~ #sns06 {
+    transform: translateY(calc(var(--header-height) * 1.5));
+}
+
+#sns02:hover ~ #sns03, #sns02:hover ~ #sns04, #sns02:hover ~ #sns05, #sns02:hover ~ #sns06 {
+    transform: translateY(calc(var(--header-height) * 1.5));
+}
+
+
+/* Underline effect for dropdown triggers */
+.slider-nav-ddt,
+.slider-nav-dd-span {
+    position: relative;
+}
+
+.slider-nav-ddt::after {
+    bottom: 10px;
+}
+
+.slider-nav-dd-span::after {
+    bottom: -2px;
+}
+
+.slider-nav-ddt::after, 
+.slider-nav-dd-span::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transition: width 250ms ease;
+}
+
+/* Ensure underline stays when dropdown is focused */
+.slider-nav-ddt:hover::after,
+.slider-nav-dd-span:hover::after,
+.slider-nav-ddt:focus::after,
+.slider-nav-dd-span:focus::after,
+.slider-nav-ddt:focus-within::after,
+.slider-nav-dd-span:focus-within::after {
+    width: 100%;
+}

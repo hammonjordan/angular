@@ -17,6 +17,7 @@ h2 {
     background-color: var(--header-background-color);
     color: var(--text-white);
     z-index: 1000;
+    border-bottom: 1px solid var(--section-background-color);
 }
 
 #hns01, #hns02, #hns03 {
@@ -94,6 +95,8 @@ h2 {
     min-width: 245.67px;
     width: fit-content;
     height: fit-content;
+    border: 1px solid var(--section-background-color);
+    border-top: none;
 }
 
 .hdropdown li {
