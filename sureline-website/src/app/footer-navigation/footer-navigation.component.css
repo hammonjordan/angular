@@ -1,0 +1,45 @@
+#footer-navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    min-height: var(--footer-min-height);
+    width: 100%;
+    background-color: var(--header-background-color);
+    color: var(--text-white);
+    border-top: 1px solid var(--section-background-color);
+}
+
+#ffullLogosrc, #fdcLogosrc {
+    height: 64px;
+}
+
+#ffullLogosrc {
+    display: block;
+}
+
+#fdcLogosrc {
+    display: none;
+}
+
+#fns01, #fns02, #fns03, #fns04 {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tab-headings {
+    margin: 8px;
+    font-size: 16px;
+}
+
+.footer-nav-link {
+    margin: 8px;
+    color: white;
+    cursor: pointer;
+}
+
+.footer-nav-ul li a {
+    color: white;
+    text-decoration: none;
+}
