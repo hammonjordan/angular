@@ -1,0 +1,151 @@
+h1 {
+    all: unset;
+}
+
+h2 {
+    all: unset;
+}
+
+#header-navbar {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    width: 100%;
+    height: var(--header-height);
+    background-color: var(--header-background-color);
+    color: var(--text-white);
+    z-index: 1000;
+}
+
+#hns01, #hns02, #hns03 {
+    position: absolute;
+    transform: translateX(-50%);
+    cursor: pointer;
+}
+
+#hns01 {
+    left: 25%;
+    line-height: var(--header-height);
+}
+
+#hns02 {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#hns03 {
+    left: 75%;
+    line-height: var(--header-height);
+}
+
+#hns04 {
+    position: absolute;
+    cursor: pointer;
+    right: 32px;
+    width: 32px;
+    height: 32px;
+}
+
+#hfullLogosrc, #hdcLogosrc {
+    height: 54px;
+}
+
+#hfullLogosrc {
+    display: block;
+}
+
+#hdcLogosrc {
+    display: none;
+}
+
+.hhline {
+    width: 32px;
+    height: 4px;
+    margin-bottom: 8px;
+    margin-top: 8px;
+    background: white;
+    transition: all 250ms ease-in-out;
+    border-radius: 2px;
+}
+
+.active {
+    margin: 0;
+    position: absolute;
+}
+
+.active:nth-child(1) {
+    transform: rotate(45deg) translate(13px, 7px);
+}
+
+.active:nth-child(2) {
+    transform: rotate(-45deg) translate(-7px, 13px);
+}
+
+.hdropdown {
+    display: none;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    list-style-type: none;
+    text-align: center;
+    min-width: 245.67px;
+    width: fit-content;
+    height: fit-content;
+}
+
+.hdropdown li {
+    padding: 4px;
+}
+
+.header-nav-ddt {
+    font-size: 16px;
+    color: var(--text-white);
+}
+
+
+.header-nav-dd-h2 {
+    font-size: 16px;
+    color: var(--text-white);
+}
+
+#hns01:hover .hdropdown,
+#hns03:hover .hdropdown {
+    display: block;
+}
+
+.header-nav-ddt,
+.header-nav-dd-h2 {
+    position: relative;
+}
+
+.header-nav-ddt::after,
+.header-nav-dd-h2::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transition: width 250ms ease;
+}
+
+.header-nav-ddt::after {
+    bottom: 24px;
+}
+
+.header-nav-dd-h2::after {
+    bottom: 0px;
+}
+
+.header-nav-ddt:hover::after,
+.header-nav-dd-h2:hover::after,
+.header-nav-ddt:focus::after,
+.header-nav-dd-h2:focus::after,
+.header-nav-ddt:focus-within::after,
+.header-nav-dd-h2:focus-within::after {
+    width: 100%;
+    left: 0;
+}
