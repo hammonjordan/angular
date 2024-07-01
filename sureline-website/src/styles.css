@@ -24,6 +24,7 @@ body {
     --footer-min-height: 193px;
     --hero-section-height: calc(100vh - 32px - var(--header-height));
     --about-section-height: 300px;
+    --testimonials-section-height: 600px;
     --body-height: calc((var(--header-height)) + (var(--hero-section-height)) + 32px);
 
     --header-background-color: #333;

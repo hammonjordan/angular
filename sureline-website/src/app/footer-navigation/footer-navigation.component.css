@@ -3,7 +3,7 @@
     align-items: center;
     justify-content: center;
     position: absolute;
-    top: calc(var(--hero-section-height) + 64px + var(--about-section-height) + 54px + 16px);
+    top: calc(var(--hero-section-height) + 64px + var(--about-section-height) + 54px + 16px + var(--testimonials-section-height) + 16px + 16px);
     min-height: var(--footer-min-height);
     width: 100%;
     background-color: var(--header-background-color);
