@@ -4,6 +4,7 @@ import { HeaderNavigationComponent } from './header-navigation/header-navigation
 import { SliderNavigationComponent } from './slider-navigation/slider-navigation.component';
 import { FooterNavigationComponent } from './footer-navigation/footer-navigation.component';
 import { HeroSectionComponent } from './hero-section/hero-section.component';
+import { AboutSectionComponent } from './about-section/about-section.component';
 
 @Component({
   selector: 'app-root',
@@ -13,7 +14,8 @@ import { HeroSectionComponent } from './hero-section/hero-section.component';
     HeaderNavigationComponent,
     SliderNavigationComponent,
     FooterNavigationComponent,
-    HeroSectionComponent
+    HeroSectionComponent,
+    AboutSectionComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
