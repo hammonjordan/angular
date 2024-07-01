@@ -1,14 +1,39 @@
 #about-section {
-    position: absolute;
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     margin: 16px;
+    padding: 32px;
     width: calc(100vw - 32px);
-    height: var(--about-section-height);
-    top: calc(var(--hero-section-height) + 32px + var(--header-height));
+    min-height: var(--about-section-min-height);
+    top: 16px;
     background-color: var(--section-background-color);
     border-radius: 8px;
     color: var(--text-white);
+}
+
+#aboutTextContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50vw;
+    line-height: 200%;
+}
+
+#horizontalSpan {
+    width: 100%;
+    margin: 16px;
+}
+
+.aboutFullLogo {
+    height: 74px;
+    margin-bottom: 32px;
+}
+
+.aboutusSectionLink {
+    color: var(--text-white);
+    margin-bottom: 32px;
 }

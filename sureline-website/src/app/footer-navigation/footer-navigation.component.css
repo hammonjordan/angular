@@ -3,9 +3,9 @@
     align-items: center;
     justify-content: center;
     position: absolute;
-    top: calc(var(--hero-section-height) + 64px + var(--about-section-height) + 54px + 16px + var(--testimonials-section-height) + 16px + 16px);
+    margin-top: 16px;
     min-height: var(--footer-min-height);
-    width: 100%;
+    width: 100vw;
     background-color: var(--header-background-color);
     color: var(--text-white);
     border-top: 1px solid var(--section-background-color);
